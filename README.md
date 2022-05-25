@@ -46,25 +46,25 @@ More about Cosine Similarity : [Understanding the Math behind Cosine Similarity]
 
 # Snapshots of the project
 <h4>Recommendation system</h4>
-<img src="https://i.imgur.com/kyCZwln.jpeg" width=600 height=400>
-<img src="https://drive.google.com/file/d/1bUlYtj7HVoL9rOAEwOCdliFpb4M0eCgK/view?usp=sharing" width=600 height=400>
+<img src="https://i.imgur.com/hNwkzRm.png" width=600 height=400>
+<img src="https://i.imgur.com/diIPLCl.png" width=600 height=400>
 <br />
 <h4>Reviews and cast</h4>
 <p float="left">
-  <img src="/MS-Engage/temp/static/snapshot/reviews.png" width=400 height=300 />
-  <img src="/MS-Engage/temp/static/snapshot/cast.png" width=400 height=300/>
+  <img src="https://i.imgur.com/1lwj7i4.png" width=400 height=300 />
+  <img src="https://i.imgur.com/XOz4yKx.png" width=400 height=300/>
 </p>
 <br />
 <h4>About and Update profile </h4>
 <p float="left">
-  <img src="/MS-Engage/temp/static/snapshot/profile.png" width=280 height=300 />
-  <img src="/MS-Engage/temp/static/snapshot/about.png" width=280 height=300/>
+  <img src="https://i.imgur.com/6AWGa5P.png" width=280 height=300 />
+  <img src="https://i.imgur.com/jP5U4j7.png" width=280 height=300/>
 </p>
 <br />
 <h4>Authentication</h4>
 <p float="left">
-  <img src="/MS-Engage/temp/static/snapshot/login.png" width=280 height=300 />
-  <img src="/MS-Engage/temp/static/snapshot/register.png"width=280 height=300/>
+  <img src="https://i.imgur.com/dSmbSDP.png" width=280 height=300 />
+  <img src="https://i.imgur.com/ACeZCM0.png"width=280 height=300/>
 </p>
 
 # How to get the API key?
