@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--CSS-->
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='main.css') }}">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+  
+    {% if title %}
+        <title>Recommendation system - {{ title }}</title>
+    {% else %}
+        <title>Recommendation system</title>
+    {% endif %}
+</head>
+<body>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+        <div class="container">
+          {% if current_user.is_authenticated %}
+          <a class="navbar-brand mr-4" href="{{ url_for('home') }}">Recommendation System</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          {% endif %}
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+              <a class="nav-item nav-link" href="{{url_for('about') }}">About</a>
+            </div>
+            <!-- Navbar Right Side -->
+            <div class="navbar-nav">
+              {% if current_user.is_authenticated %}
+                <a class="nav-item nav-link" href="{{ url_for('account') }}">Account</a>
+                <a class="nav-item nav-link" href="{{ url_for('logout') }}">Logout</a>
+              {% else %}
+                <a class="nav-item nav-link" href="{{ url_for('login') }}">Login</a>
+                <a class="nav-item nav-link" href="{{ url_for('register') }}">Register</a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-md-8">
+          {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+              {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">
+                  {{ message }}
+                </div>
+              {% endfor %}
+            {% endif %}
+          {% endwith %}
+          {% block content %}{% endblock %}
+        </div>
+      </div>
+      <div class="w-100">
+        <h2
+            style=
+                "text-align: center;
+                font-size: 50px;
+                 color: black;
+                 margin-top: 20px;
+                 margin-bottom: 40px"
+        >
+            Few features of the app!
+        </h2>
+   <section class="container">
+       <div class="card">
+            <h3>Recommendation Engine</h3>
+            <p>
+                Based on the movie input givem by the user 
+                it will suggest top 10 similar movies as an
+                output to the user
+            </p>
+       </div>
+       <div class="card">
+            <h3>Movie Cast</h3>
+            <p>
+            You can see all the top cast of
+                the movie given by user and little
+                information about everyone their name 
+                role and everything.
+                </p>
+       </div>
+       <div class="card">
+            <h3>Movie Information</h3>
+            <p>
+                You can view the title, overview , rating ,
+                genre , release date , runtime , status of
+                the movie provided by you.
+                </p>
+        </div>
+        <div class="card">
+            <h3>User Reviews</h3>
+            <p>
+                A User review feature where you can see
+                the various comment by other users who have
+                seen the movie.This Review feature is built by 
+                doing little web scrapping.
+            </p>
+        </div>
+   </section> 
+   <div class="col-sm">
+    <h2
+        style="
+            color: black;
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 60px"
+    >
+        So what was used to build the app?
+
+    </h2>
+</div>
+        <div class="row">
+            <div class="column">
+                <img src="http://api.buttercms.com/static/images/tech_banners/Flask.716baf905d79.png" width="200px" height="200px";>
+            </div>
+            <div class="column">
+                <img src="https://www.digitaldesignjournal.com/wp-content/uploads/2018/07/Python-Programming-Wallpaper_1.jpg" width="200px"
+                 height="200px";>
+            </div>
+            <div class="column">
+                <img src="https://www.sqlalchemy.org/img/sqla_logo.png" width="200px" height="200px";>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row" >
+            <div class="column">
+                <h4>4 Weeks</h4>
+            </div>
+            <div class="column">
+                <h4>1500+ lines of code</h4>
+            </div>
+        </div>
+    <div class="col-sm">
+    <h2
+        style="
+            color: black;
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 60px"
+    >
+        What are you waiting for? Go Ahead and try out the app!!
+    </div>
+    </h2>
+</div>
+</Container>
+<div class="col-sm">
+<p style="text-align: center">
+Copyright Pallavi Singh © 2022
+</p>
+</div>
+</div>
+</main>
+</body>
+</html>
+
