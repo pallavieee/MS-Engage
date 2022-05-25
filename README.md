@@ -47,7 +47,7 @@ More about Cosine Similarity : [Understanding the Math behind Cosine Similarity]
 # Snapshots of the project
 <h4>Recommendation system</h4>
 <img src="https://drive.google.com/file/d/1bUlYtj7HVoL9rOAEwOCdliFpb4M0eCgK/view?usp=sharing" width=600 height=400>
-<img src="/MS-Engage/temp/static/snapshot/recommended.png" width=600 height=400>
+<img src="https://drive.google.com/file/d/1O7WiFdIcB4FSAI3HuJdve8t2_A9f_PWc/view?usp=sharing" width=600 height=400>
 <br />
 <h4>Reviews and cast</h4>
 <p float="left">
