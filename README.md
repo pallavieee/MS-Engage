@@ -46,7 +46,7 @@ More about Cosine Similarity : [Understanding the Math behind Cosine Similarity]
 
 # Snapshots of the project
 <h4>Recommendation system</h4>
-<img src="/MS-Engage/temp/static/snapshot/recommendation.png" width=600 height=400>
+<img src="\MS-Engage\temp\static\snapshot\recommendation.png" width=600 height=400>
 <img src="/MS-Engage/temp/static/snapshot/recommended.png" width=600 height=400>
 <br />
 <h4>Reviews and cast</h4>
