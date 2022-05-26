@@ -20,11 +20,11 @@ The details of the movies(title, genre, runtime, rating, poster, etc) are fetche
 
 # Tech Stack
 <p align ="center">
-  <code><img src="http://api.buttercms.com/static/images/tech_banners/Flask.716baf905d79.png" width="5%" /></code>
-  <code><img src="https://www.digitaldesignjournal.com/wp-content/uploads/2018/07/Python-Programming-Wallpaper_1.jpg" width="5%" /></code>
-  <code><img src="https://www.sqlalchemy.org/img/sqla_logo.png" width="5%" /></code>
-  <code><img src="https://img.icons8.com/color/64/000000/git.png" width="5%"/></code>
-  <code><img src="https://img.icons8.com/color/64/000000/github.png" width="5%"/></code>
+  <code><img src="http://api.buttercms.com/static/images/tech_banners/Flask.716baf905d79.png" width="10%" /></code>
+  <code><img src="https://www.digitaldesignjournal.com/wp-content/uploads/2018/07/Python-Programming-Wallpaper_1.jpg" width="10%" /></code>
+  <code><img src="https://www.sqlalchemy.org/img/sqla_logo.png" width="10%" /></code>
+  <code><img src="https://img.icons8.com/color/64/000000/git.png" width="10%"/></code>
+  <code><img src="https://img.icons8.com/color/64/000000/github.png" width="10%"/></code>
 
 # Major Learnings
 1. **Perseverance and debugging skills**: Having faced numerous bugs that seemed *impossible* to solve at first to actually overcoming them felt like victory. It improved my problem solving skills and faith in hardwork.
