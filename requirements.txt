@@ -17,13 +17,10 @@ requests
 pickleshare
 Email-Validator
 click
-os
-secrets
+bcrypt
 Flask-Bcrypt
 Flask-Login
-Flask-Mail
 Flask-SQLAlchemy
 Flask-WTF
 SQLAlchemy
-Werkzeug
 WTForms
