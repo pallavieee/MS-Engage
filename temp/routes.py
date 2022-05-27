@@ -46,6 +46,10 @@ def get_suggestions():
     return list(data['movie_title'].str.capitalize())
 
 @app.route("/")
+@app.route("/about")
+def about():
+    return render_template('about.html', title='About')
+
 @app.route("/register", methods=['GET', 'POST'])
 def register():
     if current_user.is_authenticated:
@@ -75,8 +79,6 @@ def login():
         else:
             flash('Login Unsuccessful. Please check email and password', 'danger')
     return render_template('login.html', title='Login', form=form)
-
-
 
 @app.route("/home")
 @login_required
@@ -171,10 +173,6 @@ def recommend():
     return render_template('recommend.html',title=title,poster=poster,overview=overview,vote_average=vote_average,
         vote_count=vote_count,release_date=release_date,runtime=runtime,status=status,genres=genres,
         movie_cards=movie_cards,reviews=movie_reviews,casts=casts,cast_details=cast_details)
-
-@app.route("/about")
-def about():
-    return render_template('about.html', title='About')
 
 @app.route("/logout")
 def logout():
