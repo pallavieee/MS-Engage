@@ -17,9 +17,6 @@ import requests
 from temp.movie_objec import movie_recommend
 
 # load the nlp model and tfidf vectorizer from disk
-filename = 'temp/nlp_model.pkl'
-clf = pickle.load(open(filename, 'rb'))
-vectorizer = pickle.load(open('temp/tranform.pkl','rb'))
 
 data = pd.read_csv("main_data.csv")
 
@@ -160,14 +157,10 @@ def recommend():
             reviews_list.append(reviews.string)
             # passing the review to our model
             movie_review_list = np.array([reviews.string])
-            movie_vector = vectorizer.transform(movie_review_list)
-            pred = clf.predict(movie_vector)
-            reviews_status.append('Good' if pred else 'Bad')
-
+  
 
     # combining reviews and comments into a dictionary
-    
-    movie_reviews = {reviews_list[i]: reviews_status[i] for i in range(len(reviews_list))}         
+    movie_reviews = {reviews_list[i]: 0 for i in range(len(reviews_list))}         
 
     # passing all the data to the html file
     return render_template('recommend.html',title=title,poster=poster,overview=overview,vote_average=vote_average,
