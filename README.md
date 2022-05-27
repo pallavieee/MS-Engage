@@ -1,12 +1,12 @@
 # MS-Engage Content-Based-Movie-Recommender-System
 The project was built as a part of the Microsoft Engage '22 Program. Contributors were required to Demonstrate through their app the different kinds of algorithms that a web-streaming app (like Netflix) or an audio-streaming app (like Spotify) may use for their Recommendation Engine within a span of 4 weeks.
-Content Based Recommender System recommends movies similar to the movie user likes and analyses the sentiments on the reviews given by the user for that movie.
+Content Based Recommender System recommends movies similar to the movie user likes.
 
 Check out the live demo:
 
 # Features Implemented
 1. Top 10 recommended movie
-2. Overview genre title etc of the movie
+2. Overview, genre, title, rating, runtime, status of the movie
 3. Top cast of the movie
 4. Role the different cast played in the movie
 5. About top cast of the movie 
