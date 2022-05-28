@@ -2,7 +2,7 @@
 The project was built as a part of the Microsoft Engage '22 Program. Contributors were required to Demonstrate through their app the different kinds of algorithms that a web-streaming app (like Netflix) or an audio-streaming app (like Spotify) may use for their Recommendation Engine within a span of 4 weeks.
 Content Based Recommender System recommends movies similar to the movie user likes.
 
-Check out the live demo:
+Check out the live demo: https://movie-recommender-system-web.herokuapp.com/
 
 # Features Implemented
 1. Top 10 recommended movie
